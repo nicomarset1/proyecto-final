@@ -1,0 +1,85 @@
+/*-----autos usados/0km-----*/
+
+.main-vehiculos{
+
+    h2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #192537;
+        text-decoration: underline;
+    }
+
+    .nav-vehiculos{
+        width: 100%;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "uno dos tres cuatro"
+        "cinco seis siete ocho"
+        "nueve diez once doce"
+        ;
+        justify-items: center;
+        align-items: center;
+
+        .uno{
+            grid-area: uno;
+        }
+        .dos{
+            grid-area: dos;
+        }
+        .tres{
+            grid-area: tres;
+        }
+        .cuatro{
+            grid-area: cuatro;
+        }
+        .cinco{
+            grid-area: cinco;
+        }
+        .seis{
+            grid-area: seis;
+        }
+        .siete{
+            grid-area: siete;
+        }
+        .ocho{
+            grid-area: ocho;
+        }
+        .nueve{
+            grid-area: nueve;
+        }
+        .diez{
+            grid-area: diez;
+        }
+        .once{
+            grid-area: once;
+        }
+        .doce{
+            grid-area: doce;
+        }
+
+        .vehiculo{
+            margin: 15px;
+
+            &:hover{
+                background-color: #f1f1f1;
+                transition: .2s;
+                transform: scale(1.02, 1.02);
+            }
+
+            .btn{
+                background-color: #192537;
+                border: 1px solid #192537;
+
+                &:hover{
+                    background-color: #ffffff;
+                    color: #192537;
+                    border: 1px solid #192537;
+                }
+            }
+        }
+    }
+}

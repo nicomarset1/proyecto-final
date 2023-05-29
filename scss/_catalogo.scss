@@ -1,0 +1,42 @@
+/*-----catálogo-----*/
+
+.main-catalogo{
+    height: calc(100vh - 120px);
+    background-image: url(../img/Catálogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    div{
+        width: 45%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: #ffffff;
+            font-size: 45px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+            &:hover{
+                color: #92856f;
+                font-size: 55px;
+                transition: .5s;
+            }
+        }
+
+        h2{
+            color: #92856f;
+            font-size: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+            &:hover{
+                color: #ffffff;
+                font-size: 35px;
+                transition: .5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,397 @@
+/*---------------@media---------------*/
+/*-----header-----*/
+
+@media (max-width: 870px){
+
+    header{
+        .boton{
+
+
+            img{
+                display: block;
+            }
+        }
+        .enlace{
+
+
+            img{
+                position: relative;
+                bottom: 45px;
+            }
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.801);
+            top: 120px;
+            left: -100%;
+            text-align: center;
+            transition: .5s;
+            z-index: 1;
+
+            li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+
+                a{
+                    font-size: 20px;
+                    color: #92856f;
+                    text-decoration: none;
+
+                    &:hover{
+                        background: #92856f;
+                        color: #192537;
+                    }
+                }
+            }
+        }
+
+        #check:checked ~ ul{
+            left: 0;
+        }
+
+    }
+}
+
+@media(max-width: 433px){
+    header{
+
+        .enlace{
+            img{
+                width: 200px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+/*-----footer-----*/
+
+@media(max-width:680px){
+    footer{
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "envios"
+        "cambios"
+        "servicio"
+        "ingresaemail"
+        "conocemas"
+        "contacto"
+        ;
+
+        div{
+            border: #ffffff 1px solid;
+
+            h5{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/*-----inicio-----*/
+
+@media(max-width:780px){
+    .main-inicio{
+        height: 800px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas: 
+        "titulo"
+        "main-imagen"
+        "main-texto"
+        ;
+
+        .main-titulo{
+            grid-area: titulo;
+        }
+
+        nav{
+            .main-texto{
+                grid-area: main-texto;
+
+                p{
+                    text-align: center;
+                    position: relative;
+                    top: 300px;
+                }
+            }
+
+            .main-imagen{
+                grid-area: main-imagen;
+                display: flex;
+                justify-content: center;
+
+                img{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:620px){
+    .main-inicio{
+
+        nav{
+
+            .main-imagen{
+
+                img{
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:420px){
+    .main-inicio{
+
+        nav{
+
+            .main-texto{
+                .t-uno{
+                    font-size: 35px;
+                }
+
+                .t-dos{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/*-----contacto-----*/
+
+@media(min-width: 700px){
+    .main-contacto {
+        padding: 0 4em;
+
+        
+
+            .contact-wrapper {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+
+                .contact-info{
+                    h4{
+                        text-align: left;
+                    }
+                    ul{
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                }
+            }
+            .contact-wrapper > * {
+                padding: 2em;
+            }
+    }
+}
+
+
+@media(max-width: 433px){
+    .main-contacto{
+
+            .contact-wrapper{
+
+                .contact-info{
+
+                    p{
+
+                        .mapa{
+                            width: 200px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*-----catalogo-----*/
+
+@media (max-width: 870px){
+    .main-catalogo{
+        background-image: none;
+        height: 500px;
+
+        div{
+            width: 100%;
+            height: 100%;
+
+            h1{
+                color: #92856f;
+
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+
+            a{
+                padding: 30px 30px;
+                background-color: #192537;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:380px){
+    .main-catalogo{
+
+        div{
+
+            a{
+
+                h1{
+                    font-size: 30px;
+
+                    &:hover{
+                        font-size: 40px;
+                    }
+                }
+
+                h2{
+                    font-size: 20px;
+
+                    &:hover{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-----sobre nosotros-----*/
+
+@media(max-width:970px){
+    .main-sn{
+
+        .nav-sn{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-areas: 
+            "imguno"
+            "imgdos"
+            "textouno"
+            ;
+        }
+    }
+}
+
+@media(max-width:800px){
+    .main-sn{
+
+        .nav-sn{
+
+            div{
+    
+                img{
+                    width: 400px;
+                    height: 250px;
+                }
+    
+                h3{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .main-sn{
+
+        .nav-sn{
+
+            div{
+
+                img{
+                    width: 300px;
+                    height: 170px;
+                }
+
+                h3{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+/*-----autos usados/0km-----*/
+
+@media(max-width:1300px){
+    .main-vehiculos{
+
+        .nav-vehiculos{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "uno dos tres"
+            "cuatro cinco seis"
+            "siete ocho nueve"
+            "diez once doce"
+            ;
+        }
+    }
+}
+
+@media(max-width:970px){
+    .main-vehiculos{
+
+        .nav-vehiculos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas: 
+            "uno dos"
+            "tres cuatro"
+            "cinco seis"
+            "siete ocho"
+            "nueve diez"
+            "once doce"
+            ;
+        }
+    }
+}
+
+@media(max-width:650px){
+    .main-vehiculos{
+
+        .nav-vehiculos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-areas: 
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco"
+            "seis"
+            "siete"
+            "ocho"
+            "nueve"
+            "diez"
+            "once"
+            "doce"
+            
+            ;
+        }
+    }
+}

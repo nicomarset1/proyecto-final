@@ -1,0 +1,62 @@
+/*-----sobre nosotros-----*/
+
+.main-sn{
+    width: 100%;
+
+    h2{
+        width: 100%;
+        text-align: center;
+        border: #ffffff 1px solid;
+        color: #192537;
+        font-size: 35px;
+        text-decoration: underline;
+    }
+
+    .nav-sn{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imguno textouno"
+        "imgdos textouno"
+        ;
+
+        div{
+            img{
+                width: 500px;
+                height: 300px;
+                margin: 15px 5px;
+                border: #192537 2px solid;
+            }
+
+            h3{
+                font-size: 18px;
+                font-weight: 200;
+                margin: 15px;
+                color: #192537;
+            }
+        }
+
+        .sn-img-uno{
+            grid-area: imguno;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sn-img-dos{
+            grid-area: imgdos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sn-texto-uno{
+            grid-area: textouno;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    }

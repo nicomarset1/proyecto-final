@@ -1,0 +1,58 @@
+
+/*-----header-----*/
+
+header{
+    background-color: #192537;
+    height: 120px;
+    width: 100%;
+    border-bottom: white 1px solid;
+
+    .enlace{
+        img{
+            width: 300px;
+        }
+    }
+
+    ul{
+        float: right;
+        margin-right: 30px;
+
+        li{
+            display: inline-block;
+            line-height: 120px;
+            margin: 0 10px;
+            
+            a{
+                color: white;
+                font-size: 14px;
+                padding: 7px 13px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover{
+                    color: #92856f;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+
+    .boton{
+        display: flex;
+        justify-content: right;
+
+        img{
+            width: 46px;
+            color: white;
+            position: relative;
+            top: 37px;
+            margin-right: 37px;
+            cursor: pointer;
+            display: none;    
+        }
+    }
+
+    #check{
+        display: none;
+    }
+}
