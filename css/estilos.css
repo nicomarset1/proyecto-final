@@ -386,7 +386,18 @@ footer {
       footer div p {
         display: flex;
         justify-content: center;
-        align-items: center; } }
+        align-items: center; }
+  .unidad {
+    height: 250px; } }
+
+/*-----footer-bootstrap-----*/
+@media (max-width: 1135px) {
+  .footer-bootstrap {
+    height: 450px; } }
+
+@media (max-width: 680px) {
+  .footer-bootstrap {
+    height: 1350px; } }
 
 /*-----inicio-----*/
 @media (max-width: 780px) {
