@@ -329,6 +329,32 @@ footer {
         color: #192537;
         border: 1px solid #192537; }
 
+/*-----404-----*/
+.main-four {
+  background-color: #192537;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-four img {
+    margin: 20px;
+    width: 500px; }
+  .main-four p {
+    color: white;
+    font-size: 20px;
+    text-align: center; }
+  .main-four a button {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 25px;
+    border: 1px white solid; }
+    .main-four a button:hover {
+      background-color: #192537;
+      color: white;
+      transition: .3s;
+      cursor: pointer; }
+
 /*---------------@media---------------*/
 /*-----header-----*/
 @media (max-width: 870px) {
@@ -534,26 +560,6 @@ footer {
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve" "diez" "once" "doce"; } }
 
 /*-----404-----*/
-.main-four {
-  background-color: #192537;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+@media (max-width: 570px) {
   .main-four img {
-    margin: 20px;
-    width: 500px; }
-  .main-four p {
-    color: white;
-    font-size: 20px; }
-  .main-four a button {
-    padding: 10px;
-    border-radius: 15px;
-    margin: 25px;
-    border: 1px white solid; }
-    .main-four a button:hover {
-      background-color: #192537;
-      color: white;
-      transition: .3s;
-      cursor: pointer; }
+    width: 300px; } }
