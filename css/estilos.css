@@ -4,14 +4,18 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
 /*-----header-----*/
 header {
   background-color: #192537;
   height: 120px;
   width: 100%;
-  border-bottom: white 1px solid; }
+  border-bottom: white 1px solid;
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
   header .enlace img {
     width: 300px; }
   header ul {
@@ -487,6 +491,13 @@ footer {
     height: 170px; }
   .main-sn .nav-sn div h3 {
     font-size: 13px; } }
+
+@media (max-width: 380px) {
+  .main-sn .nav-sn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-areas: "imguno" "imgdos" "textouno"; } }
 
 /*-----autos usados/0km-----*/
 @media (max-width: 1300px) {

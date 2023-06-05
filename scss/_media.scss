@@ -344,6 +344,22 @@
     }
 }
 
+@media(max-width:380px){
+    .main-sn{
+
+        .nav-sn{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-template-areas: 
+            "imguno"
+            "imgdos"
+            "textouno"
+            ;
+        }
+    }
+}
+
 /*-----autos usados/0km-----*/
 
 @media(max-width:1300px){

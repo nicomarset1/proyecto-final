@@ -6,6 +6,9 @@ header{
     height: 120px;
     width: 100%;
     border-bottom: white 1px solid;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 
     .enlace{
         img{
